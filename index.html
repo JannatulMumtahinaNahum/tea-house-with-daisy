@@ -17,7 +17,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d'
+                clifford: '#da373d',
+                'color-primary': '#777',
 
               }
             }
@@ -37,20 +38,20 @@
         <div class="hero">
             <div class="hero-content flex-col lg:flex-row">
               <div>
-                <h1 class="text-7xl font-extrabold">It's good <br> tea time at The <br> Tea House</h1>
-                <p class="text-lg py-6"> A teahouse (mainly Asia) or tearoom (also tea room) is an establishment which primarily serves tea and other light refreshments.</p>
+                <h1 class="text-4xl md:text-7xl font-extrabold w-[300px] md:w-[550px] lg:w-[600px]">It's good <br>tea time at The Tea House</h1>
+                <p class="text-lg py-6 text-color-primary"> A teahouse (mainly Asia) or tearoom (also tea room) is an establishment which primarily serves tea and other light refreshments.</p>
                 <button class="bg-gradient-to-r from-[#FF8938] to-[#F00] p-4 text-[#FFF] rounded-lg">Explore More</button>
               </div>
              <div>
-                <img src="images/banner.png" class="w-[480px] h-[300px] md:h-[350PX] lg:w-[626px] lg:h-[428px] lg:pt-14"/>
+                <img src="images/banner.png" class="w-[480px] h-[300px] md:h-[350px] lg:w-[626px] lg:h-[428px] lg:pt-14"/>
                 <!-- rating badge -->
                 <div class="-mt-20 flex items-center justify-center gap-2.5 drop-shadow-lg bg-white  w-48 p-1.5 md:p-3 md:w-60 rounded-lg">
                     <div class="rating">
                         <input type="radio" name="rating-2" class="mask size-8 mask-star-2 bg-amber-400" checked/>
                     </div>
                     <div>
-                       <h3 class="text-xl  lg:text-3xl">5.00</h3>
-                        <p>Trust Pilot Ratings</p>
+                       <h3 class="text-xl  lg:text-3xl font-extrabold">5.00</h3>
+                        <p class="text-color-primary">Trust Pilot Ratings</p>
                     </div>
                 </div>
              </div>
@@ -59,7 +60,48 @@
     </header>
 
     <!-- Main section -->
-    <main></main>
+    <main class="container mx-auto">
+    <!-- feature section -->
+    <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <p class="text-color-primary lg:max-w-3xl mb-10 mx-auto">Here are some most popular teas around the world.Teas are beverages made from plants, seeds, flowers, roots or fruits of various plants, except the tea plant Camellia sinensis.</p>
+        <!-- featured Tea card container -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- first card -->
+        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure><img src="images/tea-1.png" alt="Shoes" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Green Tea</h2>
+              <p>Organic Green Tea provides a rich, complex taste and a boost of calm energy for the day</p>
+            </div>
+          </div>
+           <!-- Second card -->
+        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure><img src="images/tea-2.png" alt="Shoes" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Milk Tea provides a rich, complex taste and a boost of calm energy for the day</p>
+            </div>
+          </div>
+           <!-- Third card -->
+        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure><img src="images/tea-3.png" alt="Shoes" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">chamomile Tea</h2>
+              <p>Chamomile is arguably one of the most consumed herbal. The tea is made from the dried flowers of the plant.</p>
+            </div>
+          </div>
+           <!-- fourth card -->
+        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure><img src="images/tea-4.png" alt="Shoes" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Black Tea</h2>
+              <p>Black tea is arguably one of the better known brews - it is a fully oxidized tea. </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    </main>
 
     <!-- footer section -->
     <footer></footer>
