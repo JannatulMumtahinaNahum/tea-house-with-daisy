@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- Tailwind & Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d'
+
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Font family Manrope -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-manrope">
+    <!-- Header section -->
+    <header class="container md:mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-7xl font-extrabold">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="text-lg py-6"> A teahouse (mainly Asia) or tearoom (also tea room) is an establishment which primarily serves tea and other light refreshments.</p>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#F00] p-4 text-[#FFF] rounded-lg">Explore More</button>
+              </div>
+             <div>
+                <img src="images/banner.png" class="w-[470px] h-[380px] lg:w-[626px] lg:h-[428px] lg:pt-14"/>
+                <!-- rating badge -->
+                <div class="-mt-20 flex items-center justify-center gap-2.5 drop-shadow-lg bg-white  w-48 p-1.5 md:p-3 md:w-60 rounded-lg">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask size-8 mask-star-2 bg-amber-400" checked/>
+                    </div>
+                    <div>
+                       <h3 class="text-xl  lg:text-3xl">5.00</h3>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main></main>
+
+    <!-- footer section -->
+    <footer></footer>
+</body>
+</html>
