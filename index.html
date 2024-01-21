@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
@@ -35,17 +37,17 @@
 <body class="font-manrope">
     <!-- Header section -->
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
               <div>
-                <h1 class="text-4xl md:text-7xl font-extrabold w-[300px] md:w-[550px] lg:w-[600px]">It's good <br>tea time at The Tea House</h1>
-                <p class="text-lg py-6 text-color-primary"> A teahouse (mainly Asia) or tearoom (also tea room) is an establishment which primarily serves tea and other light refreshments.</p>
-                <button class="bg-gradient-to-r from-[#FF8938] to-[#F00] p-4 text-[#FFF] rounded-lg">Explore More</button>
+                <h1 class="text-4xl md:text-7xl font-extrabold w-[300px] md:w-[550px] lg:w-[600px] ml-1">It's good <br>tea time at The Tea House</h1>
+                <p class="text-lg py-6 text-color-primary ml-1"> A teahouse (mainly Asia) or tearoom (also tea room) is an establishment which primarily serves tea and other light refreshments.</p>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#F00] p-4 text-[#FFF] rounded-lg m-2">Explore More</button>
               </div>
              <div>
-                <img src="images/banner.png" class="w-[480px] h-[300px] md:h-[350px] lg:w-[626px] lg:h-[428px] lg:pt-14"/>
+                <img class="lg:ml-24" src="images/banner.png" class=""/>
                 <!-- rating badge -->
-                <div class="-mt-20 flex items-center justify-center gap-2.5 drop-shadow-lg bg-white  w-48 p-1.5 md:p-3 md:w-60 rounded-lg">
+                <div class="-mt-20 md:-mt-24 lg:ml-40 flex items-center justify-center gap-2.5 drop-shadow-lg bg-white  w-48 p-1.5 md:p-3 md:w-60 rounded-lg">
                     <div class="rating">
                         <input type="radio" name="rating-2" class="mask size-8 mask-star-2 bg-amber-400" checked/>
                     </div>
@@ -174,6 +176,51 @@
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer class="px-10 py-2 bg-gradient-to-r from-[#ed9a9a] to-[#FF8938] text-base-content text-black">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-xl p-4 ml-3">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title">Services</header> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Company</header> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Legal</header> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form>
+                <header class="footer-title">Newsletter</header> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="join">
+                    <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="bg-gradient-to-r from-[#FF8938] to-[#F00]  rounded-full p-2 m-2"> <i class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                </fieldset>
+                </form>
+        </div>
+       <div class="mt-10 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+       </div>
+      </footer>
 </body>
 </html>
